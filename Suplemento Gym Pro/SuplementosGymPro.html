@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de suplementos Gym Pro con información accesible, productos y contacto.">
+    <link rel="shortcut icon" href="Imagenes/Gymrat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloPrueba.css">
+    <title>Suplementos de Gimnasio</title>
+</head>
+<body>
+    <!-- Página principal de Suplementos Gym Pro con tienda y formularios -->
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <header>
+        <div class="header-inner">
+            <h1>💪 SUPLEMENTOS GYM PRO</h1>
+            <nav aria-label="Navegación principal">
+                <ul class="main-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="SuplementosGymPro.html">Productos</a></li>
+                    <li><a href="Registro.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Mensaje de bienvenida mostrado después del registro o ingreso correcto -->
+        <p id="welcomeMessage" class="form-message" role="status" aria-live="polite"></p>
+        <!-- Sección de carrusel de imágenes de productos -->
+        <section class="carrusel">
+            <h2>Carrusel de productos</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators" role="tablist" aria-label="Indicadores del carrusel">
+                    <button type="button" class="active" aria-current="true" aria-label="Slide 1" role="tab"></button>
+                    <button type="button" aria-label="Slide 2" role="tab"></button>
+                    <button type="button" aria-label="Slide 3" role="tab"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/ImCarrusel_1.jpg" class="d-block w-100" alt="Suplemento Proteína Whey">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/ImCarrusel_2.jpg" class="d-block w-100" alt="Suplemento Creatina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/ImCarrusel_3.jpg" class="d-block w-100" alt="Suplemento BCAA">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" id="anterior" aria-label="Diapositiva anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" id="siguiente" aria-label="Diapositiva siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+         </section>
+        <section class="productos" aria-labelledby="productos-title">
+            <h2 id="productos-title">Productos destacados</h2>
+            <p id="cartMessage" class="form-message" role="status" aria-live="polite"></p>
+            <article class="producto">
+                <!-- Tarjeta de producto: imagen, nombre y controles de compra de Proteína Whey. -->
+                <img src="Imagenes/Proteina.jpg" alt="Proteína Whey para recuperación muscular">
+                <div class="info">
+                    <h3>Proteína Whey</h3>
+                    <p>Proteína de alta calidad para recuperación muscular.</p>
+                    <table class="inputs" aria-label="Detalles del producto Proteína Whey">
+                        <tr>
+                            <td><label for="precio1">Precio ($)</label></td>
+                            <td><input type="number" id="precio1" name="precio1" placeholder="$30.000" min="0" step="0.01"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cantidad1">Cantidad (Gramos por porción)</label></td>
+                            <td><input type="number" id="cantidad1" name="cantidad1" placeholder="1 scoop de proteína" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="stock1">Stock disponible</label></td>
+                            <td><input type="number" id="stock1" name="stock1" placeholder="100" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" data-product="Proteína Whey" data-price="30000" aria-label="Agregar Proteína Whey al carrito">Agregar al carrito</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <article class="producto">
+                <!-- Tarjeta de producto: imagen, nombre y controles de compra de Creatina Monohidrato. -->
+                <img src="Imagenes/Creatina.jpg" alt="Creatina monohidrato para fuerza y resistencia">
+                <div class="info">
+                    <h3>Creatina Monohidrato</h3>
+                    <p>Aumenta fuerza y resistencia en entrenamientos intensos.</p>
+                    <table class="inputs" aria-label="Detalles del producto Creatina Monohidrato">
+                        <tr>
+                            <td><label for="precio2">Precio ($)</label></td>
+                            <td><input type="number" id="precio2" name="precio2" placeholder="$40.000" min="0" step="0.01"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dosis2">Dosis (Gramos por porción)</label></td>
+                            <td><input type="number" id="dosis2" name="dosis2" placeholder="1 gramo por 10 kg" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="stock2">Stock disponible</label></td>
+                            <td><input type="number" id="stock2" name="stock2" placeholder="150" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" data-product="Creatina Monohidrato" data-price="40000" aria-label="Agregar Creatina Monohidrato al carrito">Agregar al carrito</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+
+            <article class="producto">
+                <!-- Tarjeta de producto: imagen, nombre y controles de compra de BCAA Complex. -->
+                <img src="Imagenes/Bcaa.jpg" alt="BCAA complex para rendimiento deportivo">
+                <div class="info">
+                    <h3>BCAA Complex</h3>
+                    <p>Aminoácidos ramificados para mayor rendimiento.</p>
+                    <table class="inputs" aria-label="Detalles del producto BCAA Complex">
+                        <tr>
+                            <td><label for="precio3">Precio ($)</label></td>
+                            <td><input type="number" id="precio3" name="precio3" placeholder="$15.000" min="0" step="0.01"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="proporcion3">Proporción (1:1:1)</label></td>
+                            <td><input type="number" id="proporcion3" name="proporcion3" placeholder="250" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="stock3">Stock disponible</label></td>
+                            <td><input type="number" id="stock3" name="stock3" placeholder="80" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" data-product="BCAA Complex" data-price="15000" aria-label="Agregar BCAA Complex al carrito">Agregar al carrito</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section class="comparacion" aria-labelledby="comparacion-title">
+            <!-- Sección de comparación de productos para ayudar al usuario a elegir según beneficios y precio. -->
+            <h2 id="comparacion-title">Comparación de Suplementos</h2>
+            <table>
+                <caption>Comparación de beneficios y precios de suplementos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Beneficio Principal</th>
+                        <th scope="col">Precio Aproximado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proteína Whey</td>
+                        <td>Recuperación muscular</td>
+                        <td>$30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Creatina Monohidrato</td>
+                        <td>Fuerza y resistencia</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>BCAA Complex</td>
+                        <td>Rendimiento y recuperación</td>
+                        <td>$15.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" aria-labelledby="contacto-title">
+            <!-- Sección de contacto para que los usuarios envíen consultas o comentarios directamente desde la página. -->
+            <h2 id="contacto-title">Contáctanos</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="contactName">Nombre</label>
+                    <input type="text" id="contactName" name="contactName" required minlength="2" maxlength="80">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Correo electrónico</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required maxlength="254" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessageInput">Mensaje</label>
+                    <textarea id="contactMessageInput" name="contactMessage" rows="4" required minlength="10" maxlength="500"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                <p id="contactMessage" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <!-- Pie de página: incluye información de la empresa, enlaces rápidos e información de contacto. -->
+            <section class="footer-section">
+                <h3>Sobre nosotros</h3>
+                <p>Somos tu tienda en línea especializada en suplementos de alta calidad para gimnasio, nutrición deportiva y bienestar.</p>
+                <div class="social-links" aria-label="Redes sociales">
+                    <a href="#" title="Facebook">Facebook</a>
+                    <a href="#" title="Instagram">Instagram</a>
+                    <a href="#" title="Twitter">Twitter</a>
+                    <a href="#" title="YouTube">YouTube</a>
+                </div>
+            </section>
+
+            <nav class="footer-section" aria-label="Enlaces rápidos">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Mi Cuenta</a></li>
+                    <li><a href="#">Carrito de Compras</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Devoluciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: info@supplementosgympro.com</li>
+                    <li>Teléfono: +57 (1) 234-5678</li>
+                    <li>Dirección: Calle Principal 123, Bogotá, Colombia</li>
+                    <li>Lunes a Viernes: 8:00 - 18:00</li>
+                    <li>Sábado: 9:00 - 15:00</li>
+                </ul>
+            </section>
+        </section>
+
+        <div class="footer-bottom">
+            <!-- Nota de derechos reservados con copyright y año de publicación del sitio. -->
+            <p>&copy; 2024 Suplementos Gym Pro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="Js/app.js"></script>
+</body>
+</html>
