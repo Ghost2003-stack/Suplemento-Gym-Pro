@@ -1,1 +1,0 @@
-Profesor le dejo esta nota ya que me costo hacer los commit en mi pc para traspasar al git hub me sale mensaje de error a cada rato e incluso descargue el GitHub que me recomendaba el visual y con los comandos git config y no me funciono, dejo esta nota y una captura de lo que me salió en el visual cuando aplicaba uno de los comandos 
