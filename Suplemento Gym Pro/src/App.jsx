@@ -4,7 +4,6 @@ import Suplementos from './pages/SuplementosGymPro'
 import Registro from './pages/Registro'
 import Carrito from './pages/Carrito'
 import Contacto from './pages/Contacto'
-import Inicio from './pages/Inicio'
 import Header from './components/Header'
 
 export default function App() {
@@ -12,7 +11,7 @@ export default function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Inicio />} />
+        <Route path="/" element={<Suplementos />} />
         <Route path="/productos" element={<Suplementos />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/carrito" element={<Carrito />} />

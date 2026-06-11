@@ -8,7 +8,6 @@ export default function Header(){
         <h1>💪 SUPLEMENTOS GYM PRO</h1>
         <nav aria-label="Navegación principal">
           <ul className="main-nav">
-            <li><Link to="/">Inicio</Link></li>
             <li><Link to="/productos">Productos</Link></li>
             <li><Link to="/registro">Registro</Link></li>
             <li><Link to="/contacto">Contacto</Link></li>
