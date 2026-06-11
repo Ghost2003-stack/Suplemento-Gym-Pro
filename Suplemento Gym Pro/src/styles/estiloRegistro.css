@@ -9,11 +9,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 40%, #ff6b35 70%, #f7931e 100%);
     color: #fff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    /* No centrar verticalmente: mostrar contenido desde arriba */
+    min-height: auto;
+    display: block;
+    padding: 20px 12px;
     position: relative;
     animation: bgColorShift 12s ease-in-out infinite;
 }
@@ -86,6 +85,7 @@ body::after {
     padding: 45px;
     max-width: 520px;
     width: 100%;
+    margin: 36px auto;
     position: relative;
     z-index: 1;
     animation: fadeInUp 0.9s ease both;
@@ -292,6 +292,7 @@ main {
     padding: 45px;
     max-width: 520px;
     width: 100%;
+    margin: 36px auto;
     position: relative;
     z-index: 1;
     animation: fadeInUp 0.9s ease both;
